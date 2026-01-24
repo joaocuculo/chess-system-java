@@ -66,10 +66,10 @@ public class UI {
             System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
 
             if (chessMatch.getCheck()) {
-                System.out.println("CHECK!");
+                System.out.println(ANSI_RED + "CHECK!" + ANSI_RESET);
             }
         } else {
-            System.out.println("CHEACKMATE!");
+            System.out.println(ANSI_PURPLE + "CHEACKMATE!" + ANSI_RESET);
             System.out.println("Winner: " + chessMatch.getCurrentPlayer());
         }
     }
